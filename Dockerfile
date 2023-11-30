@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the app
-RUN npm run build
+cmd ["npm", "run", "build"]
 
 # Specify the command to run on container start
 CMD ["npm", "start"]
