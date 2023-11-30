@@ -3,7 +3,7 @@ FROM node:latest
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
-
+ENV NODE_ENV=production
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
