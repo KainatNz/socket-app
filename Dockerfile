@@ -19,7 +19,7 @@
 # # Specify the command to run on container start
 # CMD ["npm", "start"]
 # Use an official Node runtime as a parent image
-FROM node:14-alpine as build
+FROM node:14 as build
 
 # Set the working directory
 WORKDIR /app
