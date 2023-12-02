@@ -15,6 +15,6 @@ COPY . .
 
 # Build the app
 cmd ["npm", "run", "build"]
-
+EXPOSE 3001
 # Specify the command to run on container start
 CMD ["npm", "start"]
